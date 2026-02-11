@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" 
+        content="width=device-width,initial-scale=1.0">
+        <title>Kushi Rajput | Portfolio</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+        }
+        body{
+            background:#0f172a;
+            color:White;
+            scroll-behavior:smooth;    
+        }
+        
+        /*Navigation */
+        nav{
+            display:flex;
+            justify-content:space-between;
+            background:#1e293b;
+            padding:20px 50px;
+            position:sticky;
+            top:0;
+        }
+
+        nav 2{
+            color:#38bdf8;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
+        }
+
+        nav ul li a {
+            text-decoration:none;
+            color:white;
+            transition:0.3s;
+
+        }
+
+        nav ul li a:hover{
+            color:#38bdf8;
+        }
+
+        /*Hero Section*/
+        .hero{
+            text-align:center;
+            padding:80px 20px;
+        }
+        .hero h1{
+            fonr-size:40px;
+        }
+        .hero span{
+            color:#38bdf8;
+        }
+        
+        .btn{
+        display:inline-block;
+        margin-top:20px;
+        padding:10px 20px;
+        background:#38bdf8;
+        color:black;
+        text-decoration:none;
+        border-radius:5px;
+        font-weight:bold;
+    }
+
+    /*Sections*/
+    section{
+        padding:60px 20px;
+        max-width:1000px;
+        margin:auto;
+    }
+
+    h2{
+        margin-bottom:20px;
+        color:#38bdf8;
+    }
+
+    /* Skills*/
+    .skills ul {
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minimax(150px,1fr));
+        gap:15px;
+    }
+
+    .skills li{
+        background:#1e293b;
+        padding:10px;
+        text-align:center;
+        border-radius:8px;
+    }
+
+    /*projects*/
+    .project-card{
+        background:#1e293b;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:8px;
+ } 
+
+    footer{
+        text-align:center;
+        padding:20px;
+        background:#1e293b;
+        margin-top:30px;
+    }
+    </style>
+    </head>
+
+    <body>
+        <!--Navbar-->
+        <nav>
+            <h2>KUshi Rajput</h2>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--Hero-->
+        <div class="hero">
+            <h1>Hello,I'm <span>Kushi Rajput</span></h1>
+            <p> BCA student | Web Developer | programmer</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+        <!--About-->
+        Section id="About"
+            <h2>About Me</h2>
+            <p>I am a passionate BCA student with a strong interest in web development and programming. I enjoy creating responsive and user-friendly websites using HTML, CSS, and JavaScript.</p>
+        </section>
+
+
+        <!--skills-->
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+                <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Mysql</li>
+                <li>python</li>
+                </ul>
+            </section>
+
+            <!--projects-->
+            <section id="projects">
+                <h2>Projects</h2>
+                
+                <div class="project-card">
+                    <h3>Student Management System</h3>
+                    <p> Built using PHP and MySQL to manage student records efficiently.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3> login and registration system</h3>
+                    <p> secure authentication system using PHP and datbase integration</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Personal Portfolio Website</h3>
+                    <p> responsive portfolio website showcasing my skills and projects.</p>
+                </div>
+                
+                <!--contact-->
+                <section id="Contact">
+                <h2>Contact</h2>
+                <p>Email: kushirajput707@gmail.com</p>
+                <p>Phone: 7483381760</p>
+                <p>
+                    Gitub:
+                    <a href="https://github.com/kushirajput" target="_blank">
+                        visit my github
+                    </a>
+                </p>
+            </section>
+
+            <footer>
+                @2026 Kushi Rajput | All rights reserved
+            </footer>
+    </body>
+</html>
