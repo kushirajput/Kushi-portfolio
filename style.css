@@ -1,78 +1,103 @@
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
-    text-align: center;
+    background: #f4f4f4;
+    color: #333;
+    transition: 0.3s;
 }
 
-header {
-    background: linear-gradient(to right, #4CAF50, #2e8b57);
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #222;
     color: white;
-    padding: 30px;
+    position: sticky;
+    top: 0;
 }
 
-header h1 {
-    margin: 0;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-section {
-    padding: 30px 20px;
+nav a {
+    color: white;
+    text-decoration: none;
 }
 
-.about img {
+nav button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.profile {
     width: 150px;
     border-radius: 50%;
-    margin-top: 20px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: float 3s ease-in-out infinite;
 }
 
-.skills ul {
-    list-style-type: none;
-    padding: 0;
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
 }
 
-.skills li {
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
     background: #4CAF50;
     color: white;
-    margin: 8px;
-    padding: 10px 15px;
-    display: inline-block;
+    text-decoration: none;
     border-radius: 20px;
 }
 
-.projects {
-    background-color: #ffffff;
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.skill-box {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
 }
 
 .project {
-    background: #e8e8e8;
+    background: #e0e0e0;
     margin: 15px auto;
     padding: 15px;
-    width: 80%;
     max-width: 500px;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    transition: 0.3s;
 }
 
 .project:hover {
     transform: scale(1.05);
 }
 
-.contact a {
-    text-decoration: none;
-    color: #4CAF50;
-    font-weight: bold;
-}
-
 footer {
-    background-color: #333;
+    background: #222;
     color: white;
     padding: 15px;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    .project {
-        width: 95%;
-    }
+.dark-mode {
+    background: #111;
+    color: white;
 }
